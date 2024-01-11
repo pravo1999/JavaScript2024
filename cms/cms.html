@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management System</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <table>
+        <caption>Customer Management System</caption>
+        <tr>
+            <td colspan="2"><label for="txtId">Id:</label></td>       
+            <td colspan="2"><input type="text" name="" id="txtId"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="txtName">Name:</label></td>
+            <td colspan="2"><input type="text" name="" id="txtName"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="txtAddress">Address:</label></td>
+            <td colspan="2"><input type="text" name="" id="txtAddress"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="txtMobileNo">Mobile no:</label></td>
+            <td colspan="2"><input type="text" name="" id="txtMobileNo"></td>
+        </tr>
+        <tr>
+            <td><input onclick="addCustomer_click()" type="button" value="Add Customer"></td>
+            <td><input onclick="searchCustomer_click()" type="button" value="Search Customer"></td>
+            <td><input onclick="deleteCustomer_click()" type="button" value="Delete Customer"></td>
+            <td><input onclick="modifyCustomer_click()" type="button" value="Modify Customer"></td>
+        </tr>
+    </table>
+    <div id="divCustomer">
+
+    </div>
+
+<script src="./cms.js"></script>
+</body> 
+</html>
